@@ -2,7 +2,7 @@
 Simulates gravitational interaction between multiple celestial bodies in 2D using Newtonian physics.
 
 ## Features
-- Uses Euler and Runge-Kutta integration methods
+- Uses Euler and Runge-Kutta integration methods through phython coding
 - Visualizes orbits and energy conservation
 - Animate trajectories with `matplotlib.animation`
 
