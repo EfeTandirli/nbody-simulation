@@ -11,9 +11,9 @@ class Body:
         self.position += self.velocity * dt
 
 def update_force(bodies):
-        acc=[]
+        accs=[]
         for i,body in enumerate(bodies):
-            net_force=np.zeros()
+            net_force=np.zeros(2)
             for j,other in enumerate(bodies):
                 if i==j:
                     continue
@@ -22,7 +22,7 @@ def update_force(bodies):
                 g_force=G*body.mass*other.mass/(distance**2)
                 net_force+=g_force*diff/distance
             acc=net_force/body.mass
-            acc.append(acc)
+            accs.append(acc)
         return acc
         
 def rk4_step(bodies,dt):

@@ -1,19 +1,18 @@
 G = 6.67430e-11
 
-DT = 1           # Time step in seconds
-TOTAL_TIME = 10000  # Total simulation time in seconds
-
+DT = 100       
+TOTAL_TIME = 27.3 * 24 * 3600
 
 # Initial conditions 
 INITIAL_CONDITIONS = [
     {
-        "mass": 5.972e24,  # Earth
+        "mass": 5.972e24,  
         "position": [0.0, 0.0],
         "velocity": [0.0, 0.0],
     },
     {
-        "mass": 7.348e22,  # Moon
-        "position": [384400000.0, 0.0],  # meters
-        "velocity": [0.0, 1022.0],       # m/s
+        "mass": 7.348e22,  
+        "position": [384400000.0, 0.0],  
+        "velocity": [0.0, 1022.0],      
     },
 ]

@@ -11,4 +11,4 @@ def simulate(initial_conditions,dt,total_time):
         rk4_step(bodies,dt)
         for i,b in enumerate(bodies):
             traj[i].append(b.position.copy())
-    return np.array[traj]
+    return np.array(traj)
