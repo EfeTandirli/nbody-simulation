@@ -4,8 +4,8 @@ from visualise import animate_traj
 import matplotlib.pyplot as plt
 
 
-trajectories = simulate(INITIAL_CONDITIONS,DT,TOTAL_TIME)
-animate_traj(trajectories)
+trajectories,energies = simulate(INITIAL_CONDITIONS,DT,TOTAL_TIME)
+animate_traj(trajectories,energy=energies)
 
 """
 
