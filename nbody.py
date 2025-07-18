@@ -6,10 +6,7 @@ class Body:
         self.mass = mass
         self.position = np.array(position, dtype=float)
         self.velocity = np.array(velocity, dtype=float)
-    def euler_step(self,acc, dt):
-        self.velocity += acc * dt
-        self.position += self.velocity * dt
-
+    
 def update_force(bodies):
         accs=[]
         for i,body in enumerate(bodies):
